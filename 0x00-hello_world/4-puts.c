@@ -7,8 +7,8 @@
 #include <stdio.h>
 /*start of main program*/
 
+/*program doesn't expect any arguemnts from start*/
 int main(void)
-	/*program doesn't expect any arguemnts from start*/
 {
 	puts("\"Programming is like building a multilingual puzzle");
 	/*puts function*/
