@@ -1,22 +1,16 @@
-/*puts function code example*/
-#include <stdio.h>
 /**
- * start of main program
+ * main - prints string
+ *Description - prints \"Programming is like building a multilingual puzzle
+ *Return zero
  */
+
+#include <stdio.h>
+/*start of main program*/
 int main(void)
 {
-	/**
-	 * string initialization
-	 */
-	char Mystr[] = "Programming is like building a multilingual puzzle";
+	/*puts function*/
+	puts("\"Programming is like building a multilingual puzzle");
 
-	/**
-	 * will print string
-	 */
-	puts(Mystr);
-
-	/**
-	 * ends main program
-	 */
+	/* ends main program */
 	return (0);
 }
