@@ -8,13 +8,11 @@
 /*start of main program*/
 
 int main(void)
-	/* program does not expect any arguemnts
-	 * from start
-	 */
+	/*program doesn't expect any arguemnts from start*/
 {
-	/*puts function*/
 	puts("\"Programming is like building a multilingual puzzle");
+	/*puts function*/
 
-	/* ends main program */
 	return (0);
+	/* ends main program */
 }

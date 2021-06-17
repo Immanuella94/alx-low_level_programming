@@ -1,6 +1,6 @@
 /**
  * main - prints string
- * Description - prints 
+ * Description - prints
  * \"with proper grammer, but the outcome is a piece of art,
  * Return : 0
  */
@@ -9,13 +9,11 @@
 /* this is where the main function starts */
 
 int main(void)
-	/* program does not expect any arguement
-	 * from start
-	 */
+	/*program does'n expect any arguement from start*/
 {
-	/* this is the function */
 	printf("with proper grammar, but the outcome is a piece of art,");
+	/* this is the function */
 
-	/* this ends the main function */
 	return (0);
+	/* this ends the main function */
 }
