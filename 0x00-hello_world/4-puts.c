@@ -8,7 +8,7 @@ int main(void)
 	/**
 	 * string initialization
 	 */
-	char Mystr[]="Programming is like building a multilingual puzzle";
+	char Mystr[] = "Programming is like building a multilingual puzzle";
 
 	/**
 	 * will print string
