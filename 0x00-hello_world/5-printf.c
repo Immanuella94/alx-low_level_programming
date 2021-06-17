@@ -11,7 +11,7 @@
 int main(void)
 	/*program does'n expect any arguement from start*/
 {
-	printf("with proper grammar, but the outcome is a piece of art,");
+	printf("with proper grammar, but the outcome is a piece of art,\n");
 	/* this is the function */
 
 	return (0);
