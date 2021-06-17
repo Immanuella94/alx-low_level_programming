@@ -7,7 +7,9 @@
 #include <stdio.h>
 /*start of main program*/
 
-/*program doesn't expect any arguemnts from start*/
+/**
+ * main - prints script
+ */
 int main(void)
 {
 	puts("\"Programming is like building a multilingual puzzle");
