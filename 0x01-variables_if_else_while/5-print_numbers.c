@@ -14,7 +14,7 @@ int main(void)
 	/*prints 0 through 9*/
 	for (i = 0; i < 9; i++)
 		printf("%d", i);
-	printf("\n");
+	putchar('\n');
 
 	/*end of main function*/
 	return (0);
