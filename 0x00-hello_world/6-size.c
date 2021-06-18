@@ -1,9 +1,6 @@
 /**
- * main - size of data types
- * Description - prints size of data types:
- * char, int, long int, long long int,
- * and float
- * Return - zero
+ * main - Entry point
+ * Return: Always 0 (success)
  */
 #include<stdio.h>
 

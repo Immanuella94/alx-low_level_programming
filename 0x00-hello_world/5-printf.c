@@ -1,8 +1,7 @@
 /**
- * main - prints string
- * Description - prints
- * \"with proper grammer, but the outcome is a piece of art,
- * Return : 0
+ * main - Entry point
+ *
+ * Return: Always 0 (success)
  */
 
 #include <stdio.h>

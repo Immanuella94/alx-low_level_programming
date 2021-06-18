@@ -1,16 +1,14 @@
 /**
- * main - prints string
- *Description - prints \"Programming is like building a multilingual puzzle
- *Return : 0
+ *main - Entry point
+ *
+ *Return: Always 0 (success)
  */
 
 #include <stdio.h>
 /*start of main program*/
 
-/**
- * main - prints script
- */
 int main(void)
+	/*doesn't expect parameters*/
 {
 	puts("\"Programming is like building a multilingual puzzle");
 	/*puts function*/
