@@ -1,6 +1,7 @@
 /**
  * main - Entry point
  * prints base ten numbers
+ * and a new line
  * Return: Always 0 (success)
  */
 
