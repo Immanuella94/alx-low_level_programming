@@ -10,10 +10,10 @@
 int main(void)
 {
 	/*initialize int*/
-	int i = 0;
+	int i = '0';
 
 	/*prints 0 through 9*/
-	for (i = 0; i < 10; i++)
+	for (i = '0'; i <= '9'; i++)
 		putchar(i);
 	putchar('\n');
 
