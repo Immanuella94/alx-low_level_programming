@@ -10,15 +10,18 @@
 int main(void)
 {
 	/*initialize int*/
-	int i = '0';
-	int h = 'a';
+	int i;
 
-	/*prints 0 through 9*/
-	for (i = '0'; i <= '9'; i++)
-		putchar(i);
-	/*prints a through e*/
-	for (h = 'a'; h <= 'e'; h++)
-		putchar(h);
+	/*print 0 to 9*/
+	for (i = 0; i <= 9; i++)
+	{
+		putchar('0' + i); /*print ascii for int i*/
+	}
+	/*print a to f*/
+	for (i = 0; i <= 5; i++)
+	{
+		putchar('a' + i); /*prints ascii for int i*/
+	}
 	putchar('\n');
 
 	/*end of main function*/
