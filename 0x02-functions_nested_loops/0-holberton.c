@@ -5,6 +5,14 @@
  * Return: Always 0 (success)
  */
 
+/**
+ * _putchar - writes the character c to stdout
+ * @c: The character to print
+ *
+ * Return: On success 1.
+ * On error, -1 is returned, and errno is set appropriately.
+ */
+
 #include <stdio.h>
 #include "holberton.h"
 
@@ -23,4 +31,9 @@ int main(void)
 	putchar('\n');
 
 	return (0);
+}
+
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
 }
