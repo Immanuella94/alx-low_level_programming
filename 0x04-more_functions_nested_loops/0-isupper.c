@@ -21,15 +21,6 @@ int _isupper(int c)
 		}
 		c++;
 	}
-	while (c < 123)
-	{
-		if (c >= 97)
-		{
-			if (c <= 122)
-			{
-				return (0);
-			}
-		}
-		c++;
-	}
+
+	return (0);
 }
