@@ -1,14 +1,14 @@
 #include "holberton.h"
 
 /**
- * _puts2 - prints every other character and new line
+ * puts2 - prints every other character and new line
  *
  * @str: string to be printed
  *
  * Return: void
  */
 
-void _puts2(char *str)
+void puts2(char *str)
 {
 	int i, length = 0;
 
