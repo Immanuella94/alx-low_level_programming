@@ -10,16 +10,27 @@
 
 void rev_string(char *s)
 {
-	int i, j, x, length = 0;
+	int i, max, half;
+	char first, last;
 
-	while (s[length] != '\0')
+	i = 0;
+
+	while (s[i] != '\0')
 	{
-		length++;
+		i++;
 	}
-	for (i = 0; j = length - 1; i < j; i++, j--)
+
+	max = i - 1;
+	half = max / 2;
+
+	while (half >= 0)
 	{
-		x = s[i];
-		s[i] = s[j];
-		s[j] = x;
+		first = s[max - half];
+		last = s[half];
+
+		s[half] = first;
+		s[max - half] = last;
+
+		half--;
 	}
 }
