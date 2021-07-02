@@ -24,9 +24,9 @@ char *leet(char *s)
 	for (i = 0; s[i] != '\0' && a[i] != '\0' && A[i] != '\0'
 			&& b[i] != '\0'; i++)
 	{
-		if (s[i] = a[i] && s[i] = A[i])
+		if (s[i] == a[i] || s[i] == A[i])
 		{
-			s[i] = b[i];
+			return (s[i] = b[i]);
 		}
 	}
 	return (0);
