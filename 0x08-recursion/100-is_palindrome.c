@@ -1,5 +1,5 @@
 #include "holberton.h"
-#include "2-strlen.c"
+#include "2-strlen_recursion.c"
 
 /**
  * checker - checks for palindrome
@@ -30,9 +30,9 @@ int checker(char *s, int l, int i)
 
 int is_palindrome(char *s)
 {
-	if (_srtlen(s) == 0)
+	if (_srtlen_recursion(s) == 0)
 		return (1);
-	return (checker(s, _strlen(s), 0));
+	return (checker(s, _strlen_recursion(s), 0));
 
 	_putchar('\n');
 }
