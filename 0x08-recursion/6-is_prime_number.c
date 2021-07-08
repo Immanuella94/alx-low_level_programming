@@ -11,19 +11,14 @@
 
 int is_prime_number(int n)
 {
-	int i;
-
-	i = n / 2;
-
-	if (i == 1)
-	{
-		return (1);
-	}
-	if (n % i == 0)
+	if (n % 2 == 0 || n % 3 == 0 || n % 5 == 0
+			|| n % 7 == 0 || n < 2)
 	{
 		return (0);
-		i = i - 1;
-		is_prime_number(n);
+	}
+	else
+	{
+		return (1);
 	}
 	_putchar('\n');
 	return (0);

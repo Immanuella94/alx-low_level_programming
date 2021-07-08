@@ -12,21 +12,18 @@ int factorial(int n)
 {
 	int i;
 
-	i = 1;
-
-	if (n != 1)
-	{
-		i *= n--;
-		factorial(n);
-	}
-	return (i);
 	if (n < 0)
 	{
 		return (-1);
 	}
-	if (n == 0)
+	else if (n == 0)
 	{
 		return (1);
+	}
+	else
+	{
+		i = n * factorial(n - 1);
+		return (i);
 	}
 	_putchar('\n');
 	return (0);
