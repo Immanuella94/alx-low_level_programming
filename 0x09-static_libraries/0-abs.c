@@ -1,14 +1,27 @@
 #include "holberton.h"
 
 /**
- * _abs - This is an empty program
- *
+ * _abs - prints character
  * @n: integer
  *
- * Return: Always 0
+ * Return: integer 
  */
 
 int _abs(int n)
 {
-	return (0);
+	int ret;
+
+	if (n > 0)
+	{
+		return (n);
+	}
+	else if (n == 0)
+	{
+		return (n);
+	}
+	else
+	{
+		return (n *(-1));
+	}
+	return (ret);
 }

@@ -1,14 +1,19 @@
 #include "holberton.h"
 
 /**
- * _atoi - This is an empty function
+ * _atoi - prints character
  *
  * @s: pointer to string
  *
- * Return: Always 0
+ * Return: integer
  */
 
 int _atoi(char *s)
 {
-	return (0);
+	int res, i;
+
+	res = 0;
+	for (i = 0; s[i] != '\0'; ++i)
+		res = res * 10 + s[i] - '0';
+	return (res);
 }
