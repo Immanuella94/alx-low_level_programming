@@ -30,6 +30,5 @@ char *_strdup(char *str)
 
 	if (str2 == NULL)
 		return (NULL);
-	
 	return (str2);
 }
