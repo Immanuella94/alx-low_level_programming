@@ -14,7 +14,6 @@
 char *_strdup(char *str)
 {
 	char *str2;
-	char *ret = str2;
 
 	if (str == NULL)
 		return (NULL);
@@ -31,6 +30,6 @@ char *_strdup(char *str)
 		return (NULL);
 	}
 
-	return (ret);
+	return (str2);
 	free(str2);
 }
