@@ -32,5 +32,4 @@ char *_strdup(char *str)
 		return (NULL);
 	
 	return (str2);
-	free(str2);
 }
