@@ -13,12 +13,8 @@
 
 char *str_concat(char *s1, char *s2)
 {
-	char *temp1;
-	char *temp2;
 	char *s3;
 
-	*temp1 = s1;
-	*temp2 = s2;
 
 	if (s1 == NULL)
 		return (NULL);
@@ -27,16 +23,16 @@ char *str_concat(char *s1, char *s2)
 
 	s3 = malloc(strlen(s1) + strlen(s2) + 1);
 
-	while (*temp1 != '\0')
+	while (*s1 != '\0')
 	{
-		*s3 = *temp1;
-		temp1++;
+		*s3 = *s1;
+		s1++;
 		s3++;
 	}
-	while (*temp2 != '\0')
+	while (*s2 != '\0')
 	{
-		*s3 = *temp2;
-		temp2++;
+		*s3 = *s2;
+		s2++;
 		s3++;
 	}
 	*s3 = '\0';
