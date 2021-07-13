@@ -14,11 +14,14 @@
 char *_strdup(char *str)
 {
 	char *str2;
+	int s;
 
 	if (str == NULL)
 		return (NULL);
 
-	str2 = malloc(sizeof(*str2) * (strlen(str) + 1));
+	s = strlen(str);
+
+	str2 = malloc(sizeof(*str2) * (s + 1));
 
 	while (*str)
 	{
