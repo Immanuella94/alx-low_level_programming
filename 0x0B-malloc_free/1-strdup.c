@@ -28,11 +28,9 @@ char *_strdup(char *str)
 		*str2++ = *str++;
 	}
 
-	if (!str2)
-	{
+	if (str2 == NULL)
 		return (NULL);
-	}
-
+	
 	return (str2);
 	free(str2);
 }
