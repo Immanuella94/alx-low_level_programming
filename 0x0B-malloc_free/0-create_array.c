@@ -12,24 +12,20 @@
 
 char *create_array(unsigned int size, char c)
 {
-	unsigned int i;
 	char *p;
 
 	if (size == 0)
 		return (NULL);
 
-	p = malloc(sizeof(*p) * size);
+	p = (char *)malloc(size);
 
-	if (p)
-	{
-		while (i < size)
-		{
-			p[i] = c;
-			i++;
-		}
-		return (p);
-	}
-	else
+	if (p == NULL)
 		return (NULL);
-	free(p);
+
+	while (size)
+	{
+		p[size - 1] = c;
+		size--;
+	}
+	return (p);
 }

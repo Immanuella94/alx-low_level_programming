@@ -1,6 +1,27 @@
 #include "holberton.h"
 #include <stdlib.h>
-#include <string.h>
+
+/**
+ * _strlen - gets string length
+ *
+ * @s: string
+ *
+ * Return: count
+ */
+
+int _strlen(char *s)
+{
+	int counter;
+
+	counter = 0;
+
+	while (*s != 0)
+	{
+		counter++;
+		s++;
+	}
+	return (counter);
+}
 
 /**
  * str_concat - concatenates two strings
@@ -13,30 +34,37 @@
 
 char *str_concat(char *s1, char *s2)
 {
+	int l1, l2;
 	char *s3;
 
+	l1 = s1 == NULL ? 0 : _strlen(s1);
+	l2 = s2 == NULL ? 0 : _strlen(s2);
 
-	if (s1 == NULL)
+	s3 = (char *)malloc(l1 + l2 + 1);
+
+	if (s3 == NULL)
 		return (NULL);
-	if (s2 == NULL)
-		return (NULL);
 
-	s3 = malloc(strlen(s1) + strlen(s2) + 1);
+	if (s1 != NULL)
+	{
+		while (*s1)
+		{
+			*s3 = *s1;
+			s1++;
+			s3++;
+		}
+	}
+	if (s2 != NULL)
+	{
+		while (*s2)
+		{
+			*s3 = *s2;
+			s2++;
+			s3++;
+		}
+	}
 
-	while (*s1 != '\0')
-	{
-		*s3 = *s1;
-		s1++;
-		s3++;
-	}
-	while (*s2 != '\0')
-	{
-		*s3 = *s2;
-		s2++;
-		s3++;
-	}
-	*s3 = '\0';
+	s3 -= l1 + l2;
 
 	return (s3);
-	free(s3);
 }

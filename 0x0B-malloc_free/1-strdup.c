@@ -1,6 +1,27 @@
 #include "holberton.h"
 #include <stdlib.h>
-#include <string.h>
+
+/**
+ * _strlen - counts length of string
+ *
+ * @s: string
+ *
+ * Return: counter
+ */
+
+int _strlen(char *s)
+{
+	int counter;
+
+	counter = 0;
+
+	while (*s != 0)
+	{
+		counter++;
+		s++;
+	}
+	return (counter);
+}
 
 /**
  * _strdup - returns pointer with newlly allocated memory
@@ -16,19 +37,20 @@ char *_strdup(char *str)
 	char *str2;
 	int s;
 
+	s = str != NULL ? _strlen(str) : 0;
+
 	if (str == NULL)
 		return (NULL);
 
-	s = strlen(str);
-
-	str2 = malloc(sizeof(*str2) * (s + 1));
-
-	while (*str)
-	{
-		*str2++ = *str++;
-	}
+	str2 = (char *)malloc(s + 1);
 
 	if (str2 == NULL)
 		return (NULL);
+
+	while (s)
+	{
+		str2[s - 1] = str[s - 1];
+		s--;
+	}
 	return (str2);
 }
