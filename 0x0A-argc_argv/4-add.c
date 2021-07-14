@@ -1,13 +1,14 @@
 #include "holberton.h"
 #include <stdlib.h>
 
-/*
+/**
  * is_number - checks for characters
  *
  * @s: string
  *
  * Return: 1 if number 0 otherwise
  */
+
 int is_number(char *s)
 {
 	int i;
