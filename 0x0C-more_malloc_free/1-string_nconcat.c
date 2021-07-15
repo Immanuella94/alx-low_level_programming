@@ -40,7 +40,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	l1 = s1 == NULL ? 0 : _strlen(s1);
 	l2 = s2 == NULL ? 0 : _strlen(s2);
-	s3 = malloc(l1 + l2 + 1);
+	s3 = (char *)malloc(l1 + l2 + 1);
 	if (s3 == NULL)
 		return (NULL);
 	if (s1 != NULL)
