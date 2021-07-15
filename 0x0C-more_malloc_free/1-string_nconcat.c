@@ -74,4 +74,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	}
 	s3 -= l1 + l2;
 	return (s3);
+	else
+	{
+	return (NULL);
 }
