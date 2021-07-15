@@ -53,25 +53,24 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		}
 	}
 	else
-	{
 		return (NULL);
-	}
 	if (s2 != NULL)
 	{
 		while (*s2)
 		{
 		if (n >= l2)
 		{
-			*s3 = *s2;
-			s2++;
-			s3++
+			n = l2;
+			for (i = 0; i < n; i++)
+			{
+			s3[i] = s2[i];
+			i++;
+			}
 		}
 		}
 	}
 	else
-	{
-	return (NULL);
-	}
+		return (NULL);
 	s3 -= l1 + l2;
 	return (s3);
 }
