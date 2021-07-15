@@ -38,9 +38,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	int l1, l2, i;
 	char *s3;
 
-	l1 = s1 == NULL ? 0 : _strlen(s1);
-	l2 = s2 == NULL ? 0 : _strlen(s2);
-	s3 = (char *)malloc(l1 + l2 + 1);
+	l1 = s1 == NULL ? " " : _strlen(s1);
+	l2 = s2 == NULL ? " " : _strlen(s2);
+	s3 = (char *)malloc(l1 + n + 1);
 	if (s3 == NULL)
 		return (NULL);
 	if (s1 != NULL)
@@ -52,25 +52,21 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 			s3++;
 		}
 	}
-	if (s2 != NULL)
-	{
-	while (*s2)
-	{
-	if (n >= l2}
-	{
-		*s3 = *s2;
-		s2++;
-		s3++
-	}
 	else
 	{
-		for (i = 0; i < n; i++)
+		return (NULL);
+	}
+	if (s2 != NULL)
+	{
+		while (*s2)
 		{
-			s3[i] = s2[i];
-			s3++;
+		if (n >= l2)
+		{
+			*s3 = *s2;
+			s2++;
+			s3++
 		}
-	}
-	}
+		}
 	}
 	else
 	{
