@@ -16,6 +16,5 @@ size_t print_listint(const listint_t *h)
 		number++;
 		h = h->next;
 	}
-	printf("-> %ld elements\n", number);
-	return (0);
+	return (number);
 }
